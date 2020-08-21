@@ -1,0 +1,8 @@
+<h1>Add ingredients</h1>
+<label for="ingredient">ingredient</label>
+<button type="submit" (click)="addIngredient('pineapple',15)">Add ingredient</button>
+
+<h1>Your ingredients</h1>
+<ul>
+  <li *ngFor="let ing of ingredients"><p>{{ing.name}}</p><span>{{ing.price}}</span></li>
+</ul>
